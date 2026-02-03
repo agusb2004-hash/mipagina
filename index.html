@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Minimarket</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 30px;
-    }
-
-    .galeria {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .galeria img {
-      width: 250px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Mi Minimarket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+            margin: 0;
+        }
+        h1 {
+            background: #2e7d32;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 180px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.15);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Mi Minimarket</h1>
 
-<div class="galeria">
-  <img src="img/frutas.jpg" alt="Frutas">
-  <img src="img/coca.jpg" alt="Bebidas">
-  <img src="img/limpieza.jpg" alt="Limpieza">
+<div class="productos">
+    <div class="card">
+        <img src="img/frutas.jpg" alt="Frutas">
+        <p>Frutas</p>
+    </div>
+
+    <div class="card">
+        <img src="img/bebidas.jpg" alt="Bebidas">
+        <p>Bebidas</p>
+    </div>
+
+    <div class="card">
+        <img src="img/limpieza.jpg" alt="Limpieza">
+        <p>Limpieza</p>
+    </div>
 </div>
 
 </body>
